@@ -1,0 +1,13 @@
+﻿@model List<SistemaTickets.Models.Comentarios>
+
+<div>
+    <h4>Comentarios</h4>
+    <ul>
+        @foreach (var comentario in Model)
+        {
+            <li>
+                <strong>@comentario.fecha.ToString("g")</strong>: @comentario.contenido
+            </li>
+        }
+    </ul>
+</div>
